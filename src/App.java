@@ -8,7 +8,6 @@ public class App {
         PersonController personController = new PersonController();
         Person[] persons = makePersonList();
 
-        
         System.out.println(" Lista original de personas:");
         System.out.println("=================================");
         for (int i = 0; i < persons.length; i++) {
@@ -17,7 +16,7 @@ public class App {
 
         personController.sortByName(persons);
 
-        System.out.println("\n Lista de personas ordenada por nombre:");
+        System.out.println("Lista de personas ordenada por nombre:");
         System.out.println("=================================");
         for (int i = 0; i < persons.length; i++) {
             System.out.printf("%2d. %-10s, %d años%n", i + 1, persons[i].getName(), persons[i].getAge());
